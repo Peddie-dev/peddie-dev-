@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #05060a;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+.container {
+  max-width: 1100px;
+}
