@@ -4,6 +4,11 @@
   --bg: #05060a;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
 html, body, #__next {
   height: 100%;
 }

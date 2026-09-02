@@ -9,10 +9,13 @@ const skills = [
   'TypeScript',
   'React',
   'Next.js',
+  'React Native',
   'Node.js',
   'Express',
   'PostgreSQL',
+  'Redux',
   'Tailwind',
+  'Figma',
   'AWS S3'
 ];
 
@@ -39,8 +42,9 @@ export default function About() {
         <div className="md:w-2/3">
           <p className="text-slate-400 leading-relaxed">
             I&apos;m a full stack developer with a background in UI/UX and IT
-            analysis. I enjoy building performant web applications and
-            crafting interfaces that solve real user problems.
+            analysis. I co-founded Weight Cheque, and I work with teams that
+            need a public product — wellness, research, or a studio site —
+            designed in Figma and built in Next.js.
           </p>
 
           <div className="mt-6">

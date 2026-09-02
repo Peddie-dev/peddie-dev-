@@ -1,9 +1,12 @@
 'use client';
-import Image from 'next/image';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { site } from '@/lib/site';
 
 export default function Hero() {
+  const [photoFailed, setPhotoFailed] = useState(false);
+
   return (
     <section
       id="hero"
@@ -27,13 +30,14 @@ export default function Hero() {
 
         <p className="text-[15px] text-slate-400 leading-relaxed max-w-md mb-8">
           Full Stack Developer &amp;{' '}
-          <span className="text-slate-300 font-medium">UI/UX Designer</span> — I
-          build fast, accessible web apps with interfaces people enjoy using.
+          <span className="text-slate-300 font-medium">UI/UX Designer</span> in
+          Nairobi. I design and ship wellness products, research-org websites, and
+          product-studio sites — from Weight Cheque to ACRIDC and Fusion-X.
         </p>
 
         <div className="flex flex-wrap items-center gap-3 mb-7">
           
-            <a href="#projects"
+            <a href="/#projects"
             className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition-colors px-5 py-[11px] text-sm font-medium text-white shadow-lg shadow-indigo-600/20"
           >
             View my work
@@ -48,17 +52,16 @@ export default function Hero() {
             </svg>
           </a>
           
-           <a href="#contact"
+           <a href="/#contact"
             className="inline-flex items-center gap-2 rounded-xl border border-slate-700 hover:border-slate-500 transition-colors px-5 py-[11px] text-sm font-medium text-slate-400 hover:text-slate-200"
           >
             Contact me
           </a>
         </div>
 
-        {/* Social links */}
         <div className="flex items-center gap-4">
-          
-           <a href="https://github.com/your-username"
+          <a
+            href={site.github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -66,8 +69,8 @@ export default function Hero() {
           >
             <Github size={18} />
           </a>
-          
-           <a href="https://linkedin.com/in/your-username"
+          <a
+            href={site.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -75,13 +78,15 @@ export default function Hero() {
           >
             <Linkedin size={18} />
           </a>
-          
-          <a href="mailto:your@email.com"
-            aria-label="Email"
-            className="text-slate-500 hover:text-slate-200 transition-colors"
-          >
-            <Mail size={18} />
-          </a>
+          {site.email && (
+            <a
+              href={`mailto:${site.email}`}
+              aria-label="Email"
+              className="text-slate-500 hover:text-slate-200 transition-colors"
+            >
+              <Mail size={18} />
+            </a>
+          )}
         </div>
       </motion.div>
 
@@ -101,14 +106,21 @@ export default function Hero() {
             }}
           />
           <div className="absolute inset-[3px] rounded-full overflow-hidden bg-slate-800 ring-4 ring-[#0b1220]">
-            <Image
-              src="/profile.jpeg"
-              alt="Henry Omino"
-              width={214}
-              height={214}
-              priority
-              className="object-cover w-full h-full"
-            />
+            {photoFailed ? (
+              <div className="w-full h-full flex items-center justify-center bg-slate-800 text-slate-300 text-4xl font-semibold">
+                HO
+              </div>
+            ) : (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src="/profile.jpeg"
+                alt="Henry Omino"
+                width={214}
+                height={214}
+                className="object-cover w-full h-full"
+                onError={() => setPhotoFailed(true)}
+              />
+            )}
           </div>
           <span
             className="absolute bottom-3 right-3 w-3.5 h-3.5 rounded-full bg-green-500 border-2 border-[#0b1220]"
