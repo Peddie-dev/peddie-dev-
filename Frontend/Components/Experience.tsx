@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 const roles = [
   {
     company: 'Weight Cheque',
-    title: 'Co-Founder',
+    title: 'Senior Software Engineer',
     dates: 'Jul 2025 — Present',
     location: 'Nairobi',
     points: [
-      'Building a wellness product for diet plans, recipes, and lifestyle change.',
+      'Building the Weight Cheque wellness platform: diet plans, recipes, and lifestyle content.',
       'Own design and engineering across the web platform and the mobile app.'
     ]
   },
@@ -46,16 +46,16 @@ const roles = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16">
+    <section id="experience" className="py-10 sm:py-12">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-10"
+        className="mb-8"
       >
         <h2 className="text-3xl font-semibold text-white">Experience</h2>
         <p className="mt-2 text-slate-400 text-sm">
-          Product, web, and IT roles — from a newsroom service desk to co-founding a wellness company.
+          Product, web, and IT roles, from a newsroom service desk to engineering at Weight Cheque.
         </p>
       </motion.div>
 

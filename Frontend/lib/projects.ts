@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     id: 'fusion-x',
     title: 'Fusion-X',
-    desc: 'Studio website for a digital product practice — UX research, product design, and design systems for brands that need experiences that convert.',
+    desc: 'Studio website for a digital product practice: UX research, product design, and design systems for brands that need experiences that convert.',
     role: 'Product design & front-end',
     year: '2026',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
@@ -116,8 +116,8 @@ export const projects: Project[] = [
   {
     id: 'weight-cheque-web',
     title: 'Weight Cheque (Web)',
-    desc: 'Wellness platform I co-founded: weekly diet plans, keto and Mediterranean recipes, and practical guidance for lasting lifestyle change.',
-    role: 'Co-founder · design & engineering',
+    desc: 'Wellness platform where I work as Senior Software Engineer: weekly diet plans, keto and Mediterranean recipes, and practical guidance for lasting lifestyle change.',
+    role: 'Senior Software Engineer · design & engineering',
     year: '2025 — present',
     tech: ['Next.js', 'TypeScript', 'Strapi', 'Paystack'],
     image: '/projects/weight-cheque-web.png',
@@ -145,8 +145,8 @@ export const projects: Project[] = [
   {
     id: 'weight-cheque-mobile',
     title: 'Weight Cheque (Mobile)',
-    desc: 'Cross-platform nutrition and meal planning app with a custom Express backend — plans, recipes, and tracking in one place.',
-    role: 'Co-founder · mobile & API',
+    desc: 'Cross-platform nutrition and meal planning app with a custom Express backend for plans, recipes, and tracking in one place.',
+    role: 'Senior Software Engineer · mobile & API',
     year: '2025 — present',
     tech: ['React Native', 'TypeScript', 'Express.js'],
     accent: 'from-teal-600/80 to-slate-900',

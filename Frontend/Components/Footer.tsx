@@ -4,7 +4,7 @@ import { site } from '@/lib/site';
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t border-white/5">
+    <footer className="mt-14 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-slate-500">
           © {new Date().getFullYear()} {site.name}. All rights reserved.

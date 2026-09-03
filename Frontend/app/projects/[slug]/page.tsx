@@ -31,7 +31,7 @@ export default async function ProjectCaseStudy({
   if (!project) notFound();
 
   return (
-    <article className="max-w-3xl mx-auto py-16">
+    <article className="max-w-3xl mx-auto py-12 sm:py-16 px-1 sm:px-0">
       <Link
         href="/#projects"
         className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
@@ -43,7 +43,7 @@ export default async function ProjectCaseStudy({
       <p className="mt-8 text-xs uppercase tracking-[0.12em] text-slate-500">
         {project.role} · {project.year}
       </p>
-      <h1 className="mt-2 text-4xl font-semibold text-white tracking-tight">
+      <h1 className="mt-2 text-3xl sm:text-4xl font-semibold text-white tracking-tight">
         {project.title}
       </h1>
       <p className="mt-4 text-slate-400 leading-relaxed">{project.desc}</p>

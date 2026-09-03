@@ -21,12 +21,12 @@ const skills = [
 
 export default function About() {
   return (
-    <section id="about" className="py-16 max-w-6xl mx-auto px-4">
+    <section id="about" className="py-10 sm:py-12 max-w-6xl mx-auto px-4">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-10"
+        className="mb-8"
       >
         <h2 className="text-3xl font-semibold text-white">About Me</h2>
         <p className="mt-2 text-slate-400 text-sm">A bit about my background and stack.</p>
@@ -37,14 +37,14 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="md:flex md:gap-14"
+        className="md:flex md:gap-10"
       >
         <div className="md:w-2/3">
           <p className="text-slate-400 leading-relaxed">
             I&apos;m a full stack developer with a background in UI/UX and IT
-            analysis. I co-founded Weight Cheque, and I work with teams that
-            need a public product — wellness, research, or a studio site —
-            designed in Figma and built in Next.js.
+            analysis. I&apos;m a Senior Software Engineer at Weight Cheque, and I
+            work with teams that need a public product: wellness platforms, research
+            sites, or studio sites, designed in Figma and built in Next.js.
           </p>
 
           <div className="mt-6">

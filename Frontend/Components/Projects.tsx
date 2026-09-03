@@ -33,16 +33,16 @@ function ProjectCover({
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16">
+    <section id="projects" className="py-10 sm:py-12">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-10"
+        className="mb-8"
       >
         <h2 className="text-3xl font-semibold text-white">Projects</h2>
         <p className="mt-2 text-slate-400 text-sm">
-          Client work, products, and selected builds — open a case study for process and screens.
+          Client work, products, and selected builds. Open a case study for process and screens.
         </p>
       </motion.div>
 

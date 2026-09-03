@@ -24,12 +24,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-10 sm:py-12">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-10"
+        className="mb-8"
       >
         <h2 className="text-3xl font-semibold text-white">Contact</h2>
         <p className="mt-2 text-slate-400 text-sm">
@@ -37,7 +37,7 @@ export default function Contact() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,8 +45,8 @@ export default function Contact() {
         >
           <p className="text-slate-400 leading-relaxed">
             I&apos;m open to freelance work, product design, and full-stack
-            builds. Email me directly or send a short note with the form —
-            it opens a draft to {site.email}.
+            builds. Email me directly or send a short note with the form. It opens a
+            draft to {site.email}.
           </p>
 
           <div className="mt-6 flex flex-col gap-3">
@@ -137,7 +137,7 @@ export default function Contact() {
             <p className="text-xs text-slate-500">
               {site.email
                 ? 'Your mail client should open with the message drafted.'
-                : 'Opening LinkedIn — send me a note there and mention this form.'}
+                : 'Opening LinkedIn. Send me a note there and mention this form.'}
             </p>
           )}
         </motion.form>
